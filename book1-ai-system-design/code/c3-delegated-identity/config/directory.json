@@ -1,0 +1,31 @@
+{
+  "_about": "INVENTED. Stands in for the identity provider's user directory and its registered agent applications.",
+  "users": {
+    "rep.jlee": {
+      "name": "Jordan Lee",
+      "role": "field_rep",
+      "territories": ["T-NE-101"],
+      "scopes": ["hcp:read", "metrics:read", "content:read"]
+    },
+    "analyst.mchen": {
+      "name": "Mei Chen",
+      "role": "brand_analyst",
+      "territories": ["T-NE-101", "T-NE-102", "T-SE-201"],
+      "scopes": ["metrics:read", "content:read"]
+    }
+  },
+  "agents": {
+    "precall-planner": {
+      "description": "Pre-call planning assistant used by field reps",
+      "clientSecret": "precall-planner-dev-secret",
+      "allowedAudiences": ["mcp-gateway"],
+      "maxScopes": ["hcp:read", "content:read"]
+    },
+    "brand-insights-bot": {
+      "description": "Brand performance Q&A agent used by analysts",
+      "clientSecret": "brand-insights-dev-secret",
+      "allowedAudiences": ["mcp-gateway"],
+      "maxScopes": ["metrics:read", "content:read"]
+    }
+  }
+}

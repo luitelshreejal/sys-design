@@ -1,0 +1,19 @@
+{
+  "name": "c7-versioning-and-promotion",
+  "version": "1.0.0",
+  "description": "Book 1 Example C7: tool and prompt registry with semantic versioning, a breaking-change detector, an eval gate, and dev to test to prod promotion (invented data)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "demo": "node src/demo.js",
+    "eval": "node scripts/eval-gate.js --env dev",
+    "promote": "node scripts/promote.js"
+  },
+  "devDependencies": {
+    "yaml": "2.9.1"
+  }
+}

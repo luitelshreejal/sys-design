@@ -1,0 +1,40 @@
+{
+  "_about": "INVENTED DATA for a book example. Immutable artifact: never edit a published version, write a new one.",
+  "name": "get_hcp_profile",
+  "version": "1.1.1",
+  "description": "Look up one HCP's profile in the HCP 360 data product by NPI. Returns only the fields the caller's role is entitled to see.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "npi": {
+        "type": "string",
+        "description": "The HCP's 10-digit National Provider Identifier (NPI), as a string so leading digits are kept."
+      },
+      "include_fields": {
+        "type": "array",
+        "description": "Which profile fields to return.",
+        "items": {
+          "type": "string",
+          "enum": [
+            "specialty",
+            "decile",
+            "segment",
+            "last_call_date",
+            "preferred_channel"
+          ]
+        }
+      },
+      "territory_id": {
+        "type": "string",
+        "description": "Optional. Only return the HCP if they are in this territory, for example T-NE-101."
+      },
+      "as_of_date": {
+        "type": "string",
+        "description": "Optional. Snapshot date of the data product, YYYY-MM-DD. Defaults to the latest."
+      }
+    },
+    "required": [
+      "npi"
+    ]
+  }
+}

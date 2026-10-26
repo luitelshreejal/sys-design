@@ -1,0 +1,23 @@
+{
+  "_about": "INVENTED DATA for a book example. MLR-approved content items, copied from Example C1 so both examples tell the same story. Brands Zentivra and Lumotrex are fictional.",
+  "items": [
+    {
+      "content_id": "ZEN-CORE-001",
+      "brand": "Zentivra",
+      "mlr_approval_id": "MLR-2026-0412",
+      "text": "In the pivotal trial, Zentivra reduced the risk of heart failure hospitalization versus placebo. See full Prescribing Information."
+    },
+    {
+      "content_id": "ZEN-DOSE-002",
+      "brand": "Zentivra",
+      "mlr_approval_id": "MLR-2026-0419",
+      "text": "Zentivra is taken once daily. Titrate per the Prescribing Information based on tolerability and renal function."
+    },
+    {
+      "content_id": "LUM-CORE-001",
+      "brand": "Lumotrex",
+      "mlr_approval_id": "MLR-2026-0377",
+      "text": "Lumotrex improved lung function at week 12 versus placebo in adults with moderate to severe asthma. See full Prescribing Information."
+    }
+  ]
+}

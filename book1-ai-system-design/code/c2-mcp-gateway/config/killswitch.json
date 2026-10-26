@@ -1,0 +1,4 @@
+{
+  "_about": "Edit at run time to switch a tool off. Read on every call, so no restart is needed.",
+  "disabledTools": []
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "snowflake-hcp360-field-tools": {
+      "type": "http",
+      "url": "https://<orgname>-<account_name>.snowflakecomputing.com/api/v2/databases/COMMERCIAL/schemas/AI/mcp-servers/FIELD_TOOLS_MCP",
+      "headers": {
+        "Authorization": "Bearer ${SNOWFLAKE_PAT}"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "_about": "INVENTED. Minimal HCP-to-territory lookup the verifier uses to check entitlements. NPIs starting with 9 are never issued.",
+  "hcps": {
+    "9000000011": { "name": "Dr. Maya Okafor", "territory_id": "T-NE-101" },
+    "9000000037": { "name": "Dr. Priya Natarajan", "territory_id": "T-NE-102" },
+    "9000000052": { "name": "Dr. Marcus Bell", "territory_id": "T-SE-201" }
+  }
+}

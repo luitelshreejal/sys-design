@@ -1,0 +1,19 @@
+{
+  "name": "c5-llm-gateway",
+  "version": "1.0.0",
+  "description": "Book 1 Example C5: LLM gateway with small-model-first routing, fallback, per-team token budgets, cost attribution, and an exact-match cache (invented data)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "demo": "node src/demo.js",
+    "demo:real": "node src/demo.js --real",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.3.0"
+  }
+}

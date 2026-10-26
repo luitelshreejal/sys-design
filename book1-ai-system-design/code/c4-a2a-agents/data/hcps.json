@@ -1,0 +1,28 @@
+{
+  "_about": "INVENTED DATA for a book example. NPIs start with 9 because real NPIs start with 1 or 2, so none of these can match a real clinician. Stands in for a slice of an HCP 360 data product that the planner is entitled to read.",
+  "as_of": "2026-10-16",
+  "hcps": [
+    {
+      "npi": "9000000060",
+      "name": "Dr. Anita Patel",
+      "specialty": "Cardiology",
+      "hco_name": "Beacon Hill Cardiology Group",
+      "territory_id": "T-NE-101",
+      "last_call_date": "2026-09-24",
+      "last_call_topic": "Asked about titration in patients with reduced renal function",
+      "trx_13wk": { "Zentivra": 22 },
+      "trx_13wk_prior": { "Zentivra": 15 }
+    },
+    {
+      "npi": "9000000011",
+      "name": "Dr. Maya Okafor",
+      "specialty": "Cardiology",
+      "hco_name": "North Shore Heart Associates",
+      "territory_id": "T-NE-101",
+      "last_call_date": "2026-10-02",
+      "last_call_topic": "Interested in the hospitalization data",
+      "trx_13wk": { "Zentivra": 184 },
+      "trx_13wk_prior": { "Zentivra": 171 }
+    }
+  ]
+}

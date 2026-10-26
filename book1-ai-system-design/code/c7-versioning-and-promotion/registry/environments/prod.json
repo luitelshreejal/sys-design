@@ -1,0 +1,11 @@
+{
+  "_about": "Environment pointer file for prod. Names the artifact version live in this environment. Changed only by scripts/promote.js (or, for dev, by developers).",
+  "environment": "prod",
+  "tools": {
+    "get_approved_content": "1.0.0",
+    "get_hcp_profile": "1.0.0"
+  },
+  "prompts": {
+    "precall_brief": "1.0.0"
+  }
+}

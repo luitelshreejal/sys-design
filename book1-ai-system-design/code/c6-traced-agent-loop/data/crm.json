@@ -1,0 +1,63 @@
+{
+  "_about": "INVENTED DATA for a book example. Stands in for the CRM (Veeva-style) and content data products a pre-call agent would read. NPIs start with 9 because real NPIs start with 1 or 2, so none can match a real clinician. Brands Zentivra and Lumotrex are fictional. Phone numbers use the 555-01xx fiction range and emails use the .example domain.",
+  "as_of": "2026-10-16",
+  "hcps": [
+    {
+      "npi": "9000000060",
+      "first_name": "Anita",
+      "last_name": "Patel",
+      "specialty": "Cardiology",
+      "hco_name": "Beacon Hill Cardiology Group",
+      "territory_id": "T-NE-101",
+      "decile": 8,
+      "segment": "Moderate writer, open to new data",
+      "preferred_channel": "In-person, early morning",
+      "office_email": "a.patel@beaconhillcardio.example",
+      "office_phone": "617-555-0188",
+      "office_address": "40 Cambridge St, Suite 300, Boston, MA 02114",
+      "trx_13wk": { "Zentivra": 96 }
+    },
+    {
+      "npi": "9000000011",
+      "first_name": "Maya",
+      "last_name": "Okafor",
+      "specialty": "Cardiology",
+      "hco_name": "North Shore Heart Associates",
+      "territory_id": "T-NE-101",
+      "decile": 9,
+      "segment": "High writer, growing",
+      "preferred_channel": "In-person",
+      "office_email": "m.okafor@northshoreheart.example",
+      "office_phone": "617-555-0142",
+      "office_address": "12 Essex St, Salem, MA 01970",
+      "trx_13wk": { "Zentivra": 184 }
+    },
+    {
+      "npi": "9000000029",
+      "first_name": "Daniel",
+      "last_name": "Reyes",
+      "specialty": "Internal Medicine",
+      "hco_name": "Lynnfield Primary Care",
+      "territory_id": "T-NE-101",
+      "decile": 5,
+      "segment": "Low writer, stable",
+      "preferred_channel": "Rep-triggered email",
+      "office_email": "d.reyes@lynnfieldpc.example",
+      "office_phone": "617-555-0163",
+      "office_address": "7 Main St, Lynnfield, MA 01940",
+      "trx_13wk": { "Zentivra": 14 }
+    }
+  ],
+  "interactions": [
+    { "npi": "9000000060", "date": "2026-09-30", "channel": "In-person", "rep_id": "rep-jlee", "topics": ["Zentivra dosing and titration"], "samples_left": 4, "notes": "Asked how titration works for patients with reduced renal function." },
+    { "npi": "9000000060", "date": "2026-09-02", "channel": "Rep-triggered email", "rep_id": "rep-jlee", "topics": ["Zentivra core efficacy"], "samples_left": 0, "notes": "Opened the email, clicked the Prescribing Information link." },
+    { "npi": "9000000060", "date": "2026-07-21", "channel": "In-person", "rep_id": "rep-jlee", "topics": ["Formulary status at Beacon Hill"], "samples_left": 6, "notes": "Wants to know when Zentivra moves to preferred tier." },
+    { "npi": "9000000011", "date": "2026-10-02", "channel": "In-person", "rep_id": "rep-jlee", "topics": ["Zentivra core efficacy"], "samples_left": 6, "notes": "Interested in heart failure hospitalization data." }
+  ],
+  "approved_content": [
+    { "content_id": "ZEN-CORE-001", "brand": "Zentivra", "specialties": ["Cardiology", "Internal Medicine"], "title": "Core efficacy message", "text": "In the pivotal trial, Zentivra reduced the risk of heart failure hospitalization versus placebo. See full Prescribing Information.", "mlr_approval_id": "MLR-2026-0412", "status": "approved", "expires_on": "2027-03-31" },
+    { "content_id": "ZEN-DOSE-002", "brand": "Zentivra", "specialties": ["Cardiology"], "title": "Dosing and titration", "text": "Zentivra is taken once daily. Titrate per the Prescribing Information based on tolerability and renal function.", "mlr_approval_id": "MLR-2026-0419", "status": "approved", "expires_on": "2027-01-15" },
+    { "content_id": "ZEN-ACCESS-003", "brand": "Zentivra", "specialties": ["Cardiology", "Internal Medicine"], "title": "Access and affordability", "text": "Eligible commercially insured patients may pay as little as $10 per month with the Zentivra savings program. Restrictions apply.", "mlr_approval_id": "MLR-2025-1180", "status": "expired", "expires_on": "2026-06-30" },
+    { "content_id": "LUM-CORE-001", "brand": "Lumotrex", "specialties": ["Pulmonology"], "title": "Core efficacy message", "text": "Lumotrex improved lung function at week 12 versus placebo in adults with moderate to severe asthma. See full Prescribing Information.", "mlr_approval_id": "MLR-2026-0377", "status": "approved", "expires_on": "2027-05-31" }
+  ]
+}

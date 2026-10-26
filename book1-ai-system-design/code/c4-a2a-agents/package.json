@@ -1,0 +1,17 @@
+{
+  "name": "c4-a2a-agents",
+  "version": "1.0.0",
+  "description": "Book 1 Example C4: a pre-call planner agent and a compliance checker agent talking over A2A 1.0 (agent card + JSON-RPC) (invented data)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "demo": "node src/demo.js",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "@a2a-js/sdk": "1.3.0"
+  }
+}

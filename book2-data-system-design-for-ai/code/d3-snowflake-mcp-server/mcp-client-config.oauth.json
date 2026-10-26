@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "snowflake-hcp360-field-tools": {
+      "url": "https://<orgname>-<account_name>.snowflakecomputing.com/api/v2/databases/COMMERCIAL/schemas/AI/mcp-servers/FIELD_TOOLS_MCP",
+      "auth": {
+        "CLIENT_ID": "${env:MCP_CLIENT_ID}",
+        "CLIENT_SECRET": "${env:MCP_CLIENT_SECRET}"
+      }
+    }
+  }
+}

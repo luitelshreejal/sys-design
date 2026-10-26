@@ -1,0 +1,8 @@
+{
+  "_about": "Promotion policy for the example registry. Changing these numbers is itself a governance decision, so this file should be owned by the AI governance group, not by individual developers.",
+  "promotion_path": ["dev", "test", "prod"],
+  "eval_threshold": 0.9,
+  "golden_sets": {
+    "precall_brief": "data/golden/precall_brief.jsonl"
+  }
+}

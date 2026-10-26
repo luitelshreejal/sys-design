@@ -1,0 +1,182 @@
+{
+  "_about": "INVENTED DATA for a book example. Stands in for a Snowflake HCP 360 data product. NPIs start with 9 because real NPIs start with 1 or 2, so none of these can match a real clinician. Brands Zentivra and Lumotrex are fictional.",
+  "as_of": "2026-10-16",
+  "territories": [
+    { "territory_id": "T-NE-101", "name": "Boston North", "region": "Northeast" },
+    { "territory_id": "T-NE-102", "name": "Boston South", "region": "Northeast" },
+    { "territory_id": "T-SE-201", "name": "Atlanta Metro", "region": "Southeast" }
+  ],
+  "hcps": [
+    {
+      "npi": "9000000011",
+      "first_name": "Maya",
+      "last_name": "Okafor",
+      "specialty": "Cardiology",
+      "hco_name": "North Shore Heart Associates",
+      "territory_id": "T-NE-101",
+      "decile": 9,
+      "segment": "High writer, growing",
+      "preferred_channel": "In-person",
+      "office_phone": "617-555-0142",
+      "office_email": "m.okafor@northshoreheart.example",
+      "last_call_date": "2026-10-02",
+      "trx_13wk": { "Zentivra": 184, "Lumotrex": 12 },
+      "nrx_13wk": { "Zentivra": 41, "Lumotrex": 3 },
+      "patient_level": {
+        "patient_count_on_therapy": 63,
+        "sample_patient_ids": ["PT-88213", "PT-88240"],
+        "diagnosis_codes_seen": ["I50.22", "I50.32"]
+      }
+    },
+    {
+      "npi": "9000000029",
+      "first_name": "Daniel",
+      "last_name": "Reyes",
+      "specialty": "Internal Medicine",
+      "hco_name": "Lynnfield Primary Care",
+      "territory_id": "T-NE-101",
+      "decile": 6,
+      "segment": "Moderate writer, stable",
+      "preferred_channel": "Email",
+      "office_phone": "(781) 555-0199",
+      "office_email": "dreyes@lynnfieldpc.example",
+      "last_call_date": "2026-09-18",
+      "trx_13wk": { "Zentivra": 57, "Lumotrex": 22 },
+      "nrx_13wk": { "Zentivra": 9, "Lumotrex": 5 },
+      "patient_level": {
+        "patient_count_on_therapy": 19,
+        "sample_patient_ids": ["PT-90122"],
+        "diagnosis_codes_seen": ["I50.9"]
+      }
+    },
+    {
+      "npi": "9000000037",
+      "first_name": "Priya",
+      "last_name": "Natarajan",
+      "specialty": "Cardiology",
+      "hco_name": "Quincy Cardiovascular Group",
+      "territory_id": "T-NE-102",
+      "decile": 8,
+      "segment": "High writer, declining",
+      "preferred_channel": "Virtual",
+      "office_phone": "617.555.0177",
+      "office_email": "pnatarajan@quincycv.example",
+      "last_call_date": "2026-10-09",
+      "trx_13wk": { "Zentivra": 139, "Lumotrex": 4 },
+      "nrx_13wk": { "Zentivra": 22, "Lumotrex": 1 },
+      "patient_level": {
+        "patient_count_on_therapy": 48,
+        "sample_patient_ids": ["PT-77310", "PT-77355"],
+        "diagnosis_codes_seen": ["I50.22"]
+      }
+    },
+    {
+      "npi": "9000000045",
+      "first_name": "Grace",
+      "last_name": "Whitfield",
+      "specialty": "Pulmonology",
+      "hco_name": "Braintree Lung Center",
+      "territory_id": "T-NE-102",
+      "decile": 7,
+      "segment": "Lumotrex focus",
+      "preferred_channel": "In-person",
+      "office_phone": "781-555-0123",
+      "office_email": "gwhitfield@braintreelung.example",
+      "last_call_date": "2026-08-27",
+      "trx_13wk": { "Zentivra": 0, "Lumotrex": 96 },
+      "nrx_13wk": { "Zentivra": 0, "Lumotrex": 18 },
+      "patient_level": {
+        "patient_count_on_therapy": 31,
+        "sample_patient_ids": ["PT-66001"],
+        "diagnosis_codes_seen": ["J45.40"]
+      }
+    },
+    {
+      "npi": "9000000052",
+      "first_name": "Marcus",
+      "last_name": "Bell",
+      "specialty": "Cardiology",
+      "hco_name": "Peachtree Heart Institute",
+      "territory_id": "T-SE-201",
+      "decile": 10,
+      "segment": "High writer, growing",
+      "preferred_channel": "In-person",
+      "office_phone": "404-555-0110",
+      "office_email": "mbell@peachtreeheart.example",
+      "last_call_date": "2026-10-14",
+      "trx_13wk": { "Zentivra": 233, "Lumotrex": 15 },
+      "nrx_13wk": { "Zentivra": 58, "Lumotrex": 2 },
+      "patient_level": {
+        "patient_count_on_therapy": 81,
+        "sample_patient_ids": ["PT-55120", "PT-55188"],
+        "diagnosis_codes_seen": ["I50.22", "I50.42"]
+      }
+    }
+  ],
+  "brand_metrics": [
+    { "brand": "Zentivra", "territory_id": "T-NE-101", "week_ending": "2026-09-25", "trx": 402, "nrx": 88, "market_share_pct": 14.1 },
+    { "brand": "Zentivra", "territory_id": "T-NE-101", "week_ending": "2026-10-02", "trx": 415, "nrx": 91, "market_share_pct": 14.4 },
+    { "brand": "Zentivra", "territory_id": "T-NE-101", "week_ending": "2026-10-09", "trx": 431, "nrx": 97, "market_share_pct": 14.8 },
+    { "brand": "Zentivra", "territory_id": "T-NE-102", "week_ending": "2026-09-25", "trx": 356, "nrx": 70, "market_share_pct": 12.9 },
+    { "brand": "Zentivra", "territory_id": "T-NE-102", "week_ending": "2026-10-02", "trx": 349, "nrx": 66, "market_share_pct": 12.6 },
+    { "brand": "Zentivra", "territory_id": "T-NE-102", "week_ending": "2026-10-09", "trx": 338, "nrx": 61, "market_share_pct": 12.2 },
+    { "brand": "Zentivra", "territory_id": "T-SE-201", "week_ending": "2026-09-25", "trx": 512, "nrx": 120, "market_share_pct": 16.3 },
+    { "brand": "Zentivra", "territory_id": "T-SE-201", "week_ending": "2026-10-02", "trx": 527, "nrx": 124, "market_share_pct": 16.6 },
+    { "brand": "Zentivra", "territory_id": "T-SE-201", "week_ending": "2026-10-09", "trx": 540, "nrx": 129, "market_share_pct": 16.9 },
+    { "brand": "Lumotrex", "territory_id": "T-NE-101", "week_ending": "2026-10-09", "trx": 118, "nrx": 25, "market_share_pct": 6.2 },
+    { "brand": "Lumotrex", "territory_id": "T-NE-102", "week_ending": "2026-10-09", "trx": 204, "nrx": 39, "market_share_pct": 9.8 },
+    { "brand": "Lumotrex", "territory_id": "T-SE-201", "week_ending": "2026-10-09", "trx": 97, "nrx": 18, "market_share_pct": 5.1 }
+  ],
+  "approved_content": [
+    {
+      "content_id": "ZEN-CORE-001",
+      "brand": "Zentivra",
+      "title": "Core efficacy message",
+      "text": "In the pivotal trial, Zentivra reduced the risk of heart failure hospitalization versus placebo. See full Prescribing Information.",
+      "channel": "Rep-triggered email",
+      "mlr_approval_id": "MLR-2026-0412",
+      "status": "approved",
+      "expires_on": "2027-03-31"
+    },
+    {
+      "content_id": "ZEN-DOSE-002",
+      "brand": "Zentivra",
+      "title": "Dosing and titration",
+      "text": "Zentivra is taken once daily. Titrate per the Prescribing Information based on tolerability and renal function.",
+      "channel": "Detail aid",
+      "mlr_approval_id": "MLR-2026-0419",
+      "status": "approved",
+      "expires_on": "2027-01-15"
+    },
+    {
+      "content_id": "ZEN-ACCESS-003",
+      "brand": "Zentivra",
+      "title": "Access and affordability",
+      "text": "Eligible commercially insured patients may pay as little as $10 per month with the Zentivra savings program. Restrictions apply.",
+      "channel": "Leave-behind",
+      "mlr_approval_id": "MLR-2025-1180",
+      "status": "expired",
+      "expires_on": "2026-06-30"
+    },
+    {
+      "content_id": "ZEN-SAFE-004",
+      "brand": "Zentivra",
+      "title": "Important safety information (draft)",
+      "text": "DRAFT, NOT FOR USE. Updated safety language pending MLR review.",
+      "channel": "Detail aid",
+      "mlr_approval_id": null,
+      "status": "draft",
+      "expires_on": null
+    },
+    {
+      "content_id": "LUM-CORE-001",
+      "brand": "Lumotrex",
+      "title": "Core efficacy message",
+      "text": "Lumotrex improved lung function at week 12 versus placebo in adults with moderate to severe asthma. See full Prescribing Information.",
+      "channel": "Rep-triggered email",
+      "mlr_approval_id": "MLR-2026-0377",
+      "status": "approved",
+      "expires_on": "2027-05-31"
+    }
+  ]
+}

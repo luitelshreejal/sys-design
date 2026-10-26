@@ -1,0 +1,54 @@
+{
+  "_about": "Gateway policy for Book 1 Example C5. Everything here is a policy decision a platform team owns: which model tier is the default, when to escalate, what to fall back to, and how many tokens each team may spend per day. INVENTED values.",
+
+  "tiers": {
+    "small": "claude-haiku-5-5",
+    "mid": "claude-sonnet-5-5",
+    "large": "claude-opus-5-5"
+  },
+
+  "routing": {
+    "default_tier": "small",
+    "escalate_to_mid_when": {
+      "task_in": ["analysis", "multi_step"],
+      "estimated_input_tokens_over": 2000
+    },
+    "large_when": {
+      "task_in": ["high_stakes"]
+    }
+  },
+
+  "fallback_chains": {
+    "_comment": "Tried in order. If an entry fails with a retryable error or times out, the gateway moves to the next one.",
+    "small": [
+      { "provider": "anthropic", "model": "claude-haiku-5-5" },
+      { "provider": "anthropic", "model": "claude-sonnet-5-5" }
+    ],
+    "mid": [
+      { "provider": "anthropic", "model": "claude-sonnet-5-5" },
+      { "provider": "anthropic", "model": "claude-opus-5-5" }
+    ],
+    "large": [
+      { "provider": "anthropic", "model": "claude-opus-5-5" },
+      { "provider": "anthropic", "model": "claude-sonnet-5-5" }
+    ]
+  },
+
+  "timeout_ms": 8000,
+  "default_max_tokens": 512,
+  "cache_ttl_seconds": 600,
+
+  "teams": {
+    "field-force-ai": { "daily_token_budget": 20000, "max_tier": "mid" },
+    "brand-analytics": { "daily_token_budget": 50000, "max_tier": "large" },
+    "medical-info": { "daily_token_budget": 600, "max_tier": "mid" }
+  },
+
+  "prices": {
+    "_warning": "PLACEHOLDER prices for teaching. Not real list prices. Check the provider's current pricing page before using numbers like these in a business case.",
+    "unit": "USD per 1,000,000 tokens",
+    "claude-haiku-5-5": { "input": 1.0, "output": 5.0 },
+    "claude-sonnet-5-5": { "input": 5.0, "output": 25.0 },
+    "claude-opus-5-5": { "input": 25.0, "output": 125.0 }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_about": "INVENTED DATA for a book example. Immutable artifact: never edit a published version, write a new one.",
+  "name": "get_approved_content",
+  "version": "1.1.0",
+  "description": "List MLR-approved content items for a brand. Never returns draft or expired content. Cardiology team only.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "brand": {
+        "type": "string",
+        "enum": [
+          "Zentivra"
+        ],
+        "description": "The brand to list content for."
+      },
+      "filters": {
+        "type": "object",
+        "description": "Optional filters.",
+        "properties": {
+          "channel": {
+            "type": "string",
+            "description": "For example Rep-triggered email or Detail aid."
+          },
+          "approved_after": {
+            "type": "string",
+            "description": "Only items approved on or after this date, YYYY-MM-DD."
+          }
+        }
+      }
+    },
+    "required": [
+      "brand"
+    ]
+  }
+}

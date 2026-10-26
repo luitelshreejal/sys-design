@@ -1,0 +1,23 @@
+{
+  "name": "c2-mcp-gateway",
+  "version": "1.0.0",
+  "description": "Book 1 Example C2: MCP gateway with JWT authentication, role allow-lists, rate limits, PII redaction, audit log, kill switch, and an approved-server registry with pinned tool hashes",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "upstream": "node upstream/hcp360/src/http.js",
+    "start": "node src/http.js",
+    "pin": "node scripts/pin-registry.js",
+    "demo": "node scripts/demo.js",
+    "test": "node --test test/*.test.js",
+    "token": "node scripts/token.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "jose": "6.2.13",
+    "zod": "4.6.7"
+  }
+}

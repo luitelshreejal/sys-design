@@ -1,0 +1,11 @@
+{
+  "_about": "Environment pointer file for test. Names the artifact version live in this environment. Changed only by scripts/promote.js (or, for dev, by developers).",
+  "environment": "test",
+  "tools": {
+    "get_approved_content": "1.0.0",
+    "get_hcp_profile": "1.1.0"
+  },
+  "prompts": {
+    "precall_brief": "1.1.0"
+  }
+}

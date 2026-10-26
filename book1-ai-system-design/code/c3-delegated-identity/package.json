@@ -1,0 +1,18 @@
+{
+  "name": "c3-delegated-identity",
+  "version": "1.0.0",
+  "description": "Book 1 Example C3: mock identity provider with OAuth 2.0 Token Exchange (RFC 8693) issuing short-lived, audience-bound, downscoped agent tokens, plus a gateway-side verifier",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "idp": "node src/idp-server.js",
+    "demo": "node src/demo.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "jose": "6.2.13"
+  }
+}

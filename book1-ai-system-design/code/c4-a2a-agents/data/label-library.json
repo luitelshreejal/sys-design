@@ -1,0 +1,52 @@
+{
+  "_about": "INVENTED DATA for a book example. Stands in for an MLR-approved claims library and label summary. Brands Zentivra and Lumotrex are fictional. The rules are simplified keyword rules for teaching, not a real compliance standard.",
+  "as_of": "2026-10-16",
+  "products": {
+    "Zentivra": {
+      "approved_indication": "Treatment of chronic heart failure with reduced ejection fraction (HFrEF) in adults.",
+      "approved_population": "adults",
+      "approved_content": [
+        {
+          "content_id": "ZEN-CORE-001",
+          "mlr_approval_id": "MLR-2026-0412",
+          "text": "In the pivotal trial, Zentivra reduced the risk of heart failure hospitalization versus placebo. See full Prescribing Information."
+        },
+        {
+          "content_id": "ZEN-DOSE-002",
+          "mlr_approval_id": "MLR-2026-0419",
+          "text": "Zentivra is taken once daily. Titrate per the Prescribing Information based on tolerability and renal function."
+        }
+      ],
+      "unapproved_indication_pattern": "\\bhypertension\\b|\\bblood pressure\\b|\\bpreserved ejection fraction\\b|\\bHFpEF\\b"
+    },
+    "Lumotrex": {
+      "approved_indication": "Maintenance treatment of moderate to severe asthma in adults.",
+      "approved_population": "adults",
+      "approved_content": [
+        {
+          "content_id": "LUM-CORE-001",
+          "mlr_approval_id": "MLR-2026-0377",
+          "text": "Lumotrex improved lung function at week 12 versus placebo in adults with moderate to severe asthma. See full Prescribing Information."
+        }
+      ],
+      "unapproved_indication_pattern": "\\bCOPD\\b|\\bchronic obstructive\\b"
+    }
+  },
+  "rules": [
+    {
+      "rule_id": "OFF_LABEL_POPULATION",
+      "description": "Mentions a patient population outside the approved label (both brands are approved for adults only).",
+      "pattern": "\\bpediatric\\b|\\bpaediatric\\b|\\bchild(ren)?\\b|\\bkids?\\b|\\badolescents?\\b|\\bteen(s|age|agers?)?\\b"
+    },
+    {
+      "rule_id": "ABSOLUTE_CLAIM",
+      "description": "Uses absolute or guarantee language that no label supports.",
+      "pattern": "\\bcures?\\b|\\bguarantee(d|s)?\\b|\\bno side effects\\b|\\bcompletely safe\\b"
+    },
+    {
+      "rule_id": "UNSUPPORTED_COMPARATIVE",
+      "description": "Claims superiority over another product without head-to-head data in the label.",
+      "pattern": "\\bbetter than\\b|\\bsuperior to\\b|\\boutperforms?\\b"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "_about": "Role to tool allow-list. Anything not listed is denied. rateLimitPerMinute is per user.",
+  "roles": {
+    "field_rep": {
+      "tools": ["get_hcp_profile", "get_brand_metrics", "search_approved_content"],
+      "rateLimitPerMinute": 20
+    },
+    "brand_analyst": {
+      "tools": ["get_brand_metrics", "search_approved_content"],
+      "rateLimitPerMinute": 60
+    },
+    "mlr_reviewer": {
+      "tools": ["search_approved_content"],
+      "rateLimitPerMinute": 30
+    }
+  }
+}
